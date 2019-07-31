@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_login"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView"/>
+
+    <TextView
+            android:id="@+id/text_user"
+            android:text="@string/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+    <EditText
+            android:id="@+id/edit_user"
+            android:padding="@dimen/small_space"
+            android:background="@drawable/border_line"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    <TextView
+            android:id="@+id/text_password"
+            android:text="@string/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/edit_user"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+    <EditText
+            android:id="@+id/edit_password"
+            android:padding="@dimen/small_space"
+            android:background="@drawable/border_line"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_password"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+    <TextView
+            android:id="@+id/text_create_user"
+            android:text="@string/create_user"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/edit_password"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/edit_password"/>
+
+    <TextView
+            android:id="@+id/text_forget_pass"
+            android:text="@string/forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/text_create_user"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@+id/text_create_user"
+            app:layout_constraintBottom_toBottomOf="@+id/text_create_user"/>
+
+    <Button
+            android:id="@+id/button_login"
+            android:text="@string/login"
+            style="@style/StandardButton"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_create_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    <Button
+            android:id="@+id/button_exit"
+            android:text="@string/exit"
+            style="@style/StandardButton"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/button_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

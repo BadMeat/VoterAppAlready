@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VoteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/holo_blue_light"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
+            android:id="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+                android:layout_margin="@dimen/small_space"
+                android:src="@drawable/vote_logopng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+            tools:text="User Name"
+            android:id="@+id/text_user"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            />
+
+    <TextView
+            android:background="@drawable/stroke_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_space"
+            android:id="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/text_user"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+                android:layout_marginStart="@dimen/standard_space"
+                android:layout_marginEnd="@dimen/standard_space"
+                android:background="@drawable/border_line"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/image_vote"
+                    android:src="@drawable/vote"
+                    android:layout_margin="20dp"
+                    android:contentDescription="@string/vote"
+                    android:layout_width="@dimen/standard_image"
+                    android:layout_height="@dimen/standard_image"/>
+
+            <TextView
+                    android:text="@string/vote"
+                    android:layout_marginBottom="@dimen/standard_space"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginStart="@dimen/standard_space"
+                android:layout_marginEnd="@dimen/standard_space"
+                android:background="@drawable/border_line"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/image_result"
+                    android:layout_margin="20dp"
+                    android:contentDescription="@string/result"
+                    android:src="@drawable/result"
+                    android:layout_width="@dimen/standard_image"
+                    android:layout_height="@dimen/standard_image"/>
+
+            <TextView
+                    android:layout_marginBottom="@dimen/standard_space"
+                    android:text="@string/result"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+            android:background="@drawable/stroke_line"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/standard_space"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

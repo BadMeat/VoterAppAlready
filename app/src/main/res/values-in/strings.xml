@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">VoterApp</string>
+    <string name="login">Login</string>
+    <string name="user_name">User Name</string>
+    <string name="user_password">Password</string>
+    <string name="create_user">Create User</string>
+    <string name="exit">Exit</string>
+    <string name="user_role">User Role</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="setting">Setting</string>
+    <string name="vote">Pilih</string>
+    <string name="result">Hasil</string>
+    <string name="question">Pertanyaan</string>
+    <string name="save_succes">Simpan Berhasil</string>
+    <string name="answer">Jawaban</string>
+    <string name="set_answer">Siapkan Jawaban</string>
+    <string name="empty">Empty</string>
+    <string name="count_result">%1$s - %2$d%% - %3$s</string>
+    <string name="presentase">%1$d%%</string>
+    <string name="hi_user">Hai %1$s</string>
+    <string name="voters">Jumlah Pemilih : %1$d</string>
+    <string name="zero">0%</string>
+
+    <string-array name="user_role">
+        <item>Admin</item>
+        <item>User</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_vote">User sudah memilih untuk pertanyaan ini</string>
+    <string name="alert_user">Silahkan Masukan Username</string>
+    <string name="alert_password">Silahkan Masukan Password</string>
+    <string name="wrong_user">Username atau passord salah</string>
+    <string name="alert_question">Isi Pertanyaan lebih dahulu</string>
+    <string name="alert_asnwer">Isi semua pertanyaan dahulu</string>
+    <string name="question_constraint">Pertanyaan sudah ada, silahkan menggunakan yang lain</string>
+    <string name="user_contraint">Username telah terpakai</string>
+</resources>
